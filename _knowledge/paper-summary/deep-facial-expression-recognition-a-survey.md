@@ -1,14 +1,9 @@
 ---
-Date: 2026-02-15
-Type: Summary of Thesis
-Status: Building🏗️
-tags:
-  - emotion
-  - AI
-  - Facial_Expression
-Paper: "[[Deep_Facial_Expression_Recognition-A_Survey.pdf]]"
+subject: Paper Summary
+order: 1
 ---
-# Deep Facial Expression Recognition-A survey
+
+# Deep Facial Expression Recognition - A Survey
 ---
 Main Key Word: #emotion #AI #Facial_Expression
 
@@ -50,13 +45,13 @@ For using coordinates of localized landmarks
 In table2(4p), face alignment detectors are introduced
 
 Main skill : Cascade of regression functions / Cascade of regression CNN
-❗️what is cascade or regression?
+
 ### 3.1.2 Data augmentation
-#### 1. on-the-fly data augmentation 
+#### 1. on-the-fly data augmentation
 - usually embeded in deep learning toolkits to alleviate overfitting
 - randomly cropped input smples from the four corners and center of the image, and rotate or flip these.
 	- it makes larger dataset than the original training data.
-- Two common prediction modes are adopted during testing: 
+- Two common prediction modes are adopted during testing:
 	- only the center patch of the face is used for prediction
 	- the prediction value is averaged over all ten crops
 

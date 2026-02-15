@@ -11,14 +11,10 @@
             "id": "76c8e32603d715af",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/daily-journal/[2026-02-15]Daily-Journal.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "[2026-02-15]Daily-Journal"
+              "title": "New tab"
             }
           }
         ]
@@ -183,11 +179,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "6c98b707df0ad1f0",
+  "active": "76c8e32603d715af",
   "lastOpenFiles": [
+    "_site/knowledge/paper-summary/deep-facial-expression-recognition-a-survey/index.html",
+    "_site/knowledge/paper-summary/deep-facial-expression-recognition-a-survey",
+    "_knowledge/paper-summary/deep-facial-expression-recognition-a-survey.md",
+    "_site/posts/the-first-post-of-my-big-picture/index.html",
+    "_site/posts/the-first-post-of-my-big-picture",
+    "_site/posts/daily-journal/index.html",
+    "_site/posts/daily-journal",
+    "_posts/daily-journal/[2026-02-15]Daily-Journal.md",
+    "_posts/daily-journal/2026-02-15-the-first-post-of-my-big-picture.md",
+    "_posts/daily-journal/2026-02-15-daily-journal.md",
     "_posts/daily-journal/the-first-post-of-my-big-picture.md",
     "_posts/daily-journal/2026-02-14-css-has-selector.md",
-    "_posts/daily-journal/[2026-02-15]Daily-Journal.md",
     "_posts/daily-journal/2026-02-15 1.md",
     "_posts/daily-journal/2026-02-15-blog-setup.md",
     "_posts/daily-journal/2026-02-15.md"
