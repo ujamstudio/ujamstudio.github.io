@@ -1,7 +1,7 @@
 ---
 title: The first post of my big picture
 category: Daily Journal
-summary: Finally started my dev blog. Built with Jekyll and GitHub Pages.
+summary: My big picture is started!
 ---
 Hi guys, it's Jay (Minjae Kim).
 I'm a freshman at Chung-Ang University, majoring in Art and Technology.  
