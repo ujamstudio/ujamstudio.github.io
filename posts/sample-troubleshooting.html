@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixing "CNAME already taken" on GitHub Pages - UJam Studio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="site-title">ujamstudio</a>
+            <nav class="site-nav">
+                <a href="../index.html">Posts</a>
+                <a href="../about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <div class="post-header">
+                <span class="post-date">2026-02-15</span>
+                <h1>Fixing "CNAME already taken" on GitHub Pages</h1>
+                <div class="post-meta">
+                    <span class="category-tag">Troubleshooting</span>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <h2>Problem</h2>
+                <p>
+                    When trying to set a custom domain in the GitHub Pages settings,
+                    I got the following error:
+                </p>
+                <pre><code>The CNAME `example.com` is already taken.
+If you are the owner of this domain, check out
+https://docs.github.com/pages/configuring-a-custom-domain</code></pre>
+
+                <h2>Cause</h2>
+                <p>
+                    This happens when another GitHub repository (even one you own) already
+                    has a <code>CNAME</code> file pointing to the same domain.
+                </p>
+
+                <h2>Solution</h2>
+                <ol>
+                    <li>Search your other repos for a <code>CNAME</code> file with that domain</li>
+                    <li>Delete the old <code>CNAME</code> file or update it</li>
+                    <li>Wait a few minutes, then retry setting the custom domain</li>
+                </ol>
+
+                <h2>Takeaway</h2>
+                <p>
+                    Always check existing repos before assigning a custom domain.
+                    GitHub enforces one-to-one mapping between domains and repositories.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 ujamstudio</p>
+        </div>
+    </footer>
+</body>
+</html>

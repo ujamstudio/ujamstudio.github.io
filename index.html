@@ -3,24 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UJam Studio Blog</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            max-width: 720px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: #f6f8fa;
-            color: #24292f;
-        }
-        h1 {
-            border-bottom: 1px solid #d0d7de;
-            padding-bottom: 0.5rem;
-        }
-    </style>
+    <title>UJam Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>UJam Studio Blog</h1>
-    <p>GitHub Pages is working!</p>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="site-title">ujamstudio</a>
+            <nav class="site-nav">
+                <a href="index.html" class="active">Posts</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="categories">
+            <a href="#" class="category-tag active">All</a>
+            <a href="#" class="category-tag">Study Notes</a>
+            <a href="#" class="category-tag">Projects</a>
+            <a href="#" class="category-tag">Troubleshooting</a>
+            <a href="#" class="category-tag">TIL</a>
+        </div>
+
+        <ul class="post-list">
+            <li class="post-item">
+                <span class="post-date">2026-02-15</span>
+                <h2 class="post-title">
+                    <a href="posts/getting-started.html">Setting Up My Blog with GitHub Pages</a>
+                </h2>
+                <p class="post-summary">
+                    A quick walkthrough of how I built this blog from scratch using plain HTML and CSS, hosted on GitHub Pages.
+                </p>
+                <div class="post-meta">
+                    <span class="category-tag">Projects</span>
+                </div>
+            </li>
+
+            <li class="post-item">
+                <span class="post-date">2026-02-15</span>
+                <h2 class="post-title">
+                    <a href="posts/sample-troubleshooting.html">Fixing "CNAME already taken" on GitHub Pages</a>
+                </h2>
+                <p class="post-summary">
+                    Ran into this error while setting up a custom domain. Here's what caused it and how I resolved it.
+                </p>
+                <div class="post-meta">
+                    <span class="category-tag">Troubleshooting</span>
+                </div>
+            </li>
+
+            <li class="post-item">
+                <span class="post-date">2026-02-14</span>
+                <h2 class="post-title">
+                    <a href="#">TIL: CSS :has() selector</a>
+                </h2>
+                <p class="post-summary">
+                    The parent selector we always wanted is finally here. Quick note on how it works.
+                </p>
+                <div class="post-meta">
+                    <span class="category-tag">TIL</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 ujamstudio</p>
+        </div>
+    </footer>
 </body>
 </html>
