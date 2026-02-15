@@ -1,5 +1,4 @@
 ---
-title: Collections Framework
 subject: Computer Science / Java / Fundamental
 order: 2
 ---

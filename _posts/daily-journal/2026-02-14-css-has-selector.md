@@ -1,6 +1,5 @@
 ---
-title: "TIL: CSS :has() Selector"
-category: TIL
+category: Daily Journal
 summary: The parent selector we always wanted is finally here.
 ---
 

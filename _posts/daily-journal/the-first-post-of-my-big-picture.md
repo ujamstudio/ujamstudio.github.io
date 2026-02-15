@@ -1,5 +1,4 @@
 ---
-title: The first post of my big picture
 category: Daily Journal
 summary: My big picture is started!
 ---

@@ -1,5 +1,4 @@
 ---
-title: "Git Basics: Branching and Merging"
 category: Lecture Note
 summary: Core concepts of Git branching, merging strategies, and when to use rebase vs merge.
 ---

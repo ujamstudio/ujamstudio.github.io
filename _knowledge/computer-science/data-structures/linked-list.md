@@ -1,5 +1,4 @@
 ---
-title: Linked List
 subject: Computer Science / Data Structures
 order: 1
 ---

@@ -1,5 +1,4 @@
 ---
-title: OOP Basics
 subject: Computer Science / Java / Fundamental
 order: 1
 ---
