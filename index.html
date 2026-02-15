@@ -1,77 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UJam Studio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="site-title">ujamstudio</a>
-            <nav class="site-nav">
-                <a href="index.html" class="active">Posts</a>
-                <a href="about.html">About</a>
-            </nav>
+---
+layout: default
+title: ""
+---
+<div class="categories">
+    <a href="#" class="category-tag active" data-category="all">All</a>
+    <a href="#" class="category-tag" data-category="Study Notes">Study Notes</a>
+    <a href="#" class="category-tag" data-category="Projects">Projects</a>
+    <a href="#" class="category-tag" data-category="Troubleshooting">Troubleshooting</a>
+    <a href="#" class="category-tag" data-category="TIL">TIL</a>
+</div>
+
+<ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-item" data-category="{{ post.category }}">
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <h2 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        {% if post.summary %}
+        <p class="post-summary">{{ post.summary }}</p>
+        {% endif %}
+        <div class="post-meta">
+            {% if post.category %}
+            <span class="category-tag">{{ post.category }}</span>
+            {% endif %}
         </div>
-    </header>
+    </li>
+    {% endfor %}
+</ul>
 
-    <main class="container">
-        <div class="categories">
-            <a href="#" class="category-tag active">All</a>
-            <a href="#" class="category-tag">Study Notes</a>
-            <a href="#" class="category-tag">Projects</a>
-            <a href="#" class="category-tag">Troubleshooting</a>
-            <a href="#" class="category-tag">TIL</a>
-        </div>
-
-        <ul class="post-list">
-            <li class="post-item">
-                <span class="post-date">2026-02-15</span>
-                <h2 class="post-title">
-                    <a href="posts/getting-started.html">Setting Up My Blog with GitHub Pages</a>
-                </h2>
-                <p class="post-summary">
-                    A quick walkthrough of how I built this blog from scratch using plain HTML and CSS, hosted on GitHub Pages.
-                </p>
-                <div class="post-meta">
-                    <span class="category-tag">Projects</span>
-                </div>
-            </li>
-
-            <li class="post-item">
-                <span class="post-date">2026-02-15</span>
-                <h2 class="post-title">
-                    <a href="posts/sample-troubleshooting.html">Fixing "CNAME already taken" on GitHub Pages</a>
-                </h2>
-                <p class="post-summary">
-                    Ran into this error while setting up a custom domain. Here's what caused it and how I resolved it.
-                </p>
-                <div class="post-meta">
-                    <span class="category-tag">Troubleshooting</span>
-                </div>
-            </li>
-
-            <li class="post-item">
-                <span class="post-date">2026-02-14</span>
-                <h2 class="post-title">
-                    <a href="#">TIL: CSS :has() selector</a>
-                </h2>
-                <p class="post-summary">
-                    The parent selector we always wanted is finally here. Quick note on how it works.
-                </p>
-                <div class="post-meta">
-                    <span class="category-tag">TIL</span>
-                </div>
-            </li>
-        </ul>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 ujamstudio</p>
-        </div>
-    </footer>
-</body>
-</html>
+<script>
+document.querySelectorAll('.categories .category-tag').forEach(tag => {
+    tag.addEventListener('click', e => {
+        e.preventDefault();
+        const cat = tag.dataset.category;
+        document.querySelectorAll('.categories .category-tag').forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+        document.querySelectorAll('.post-item').forEach(item => {
+            item.style.display = (cat === 'all' || item.dataset.category === cat) ? '' : 'none';
+        });
+    });
+});
+</script>
