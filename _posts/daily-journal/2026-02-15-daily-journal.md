@@ -7,7 +7,7 @@ Here's what I studied today:
 
 1. Solving 18.01 Problem Set 1 (Section 1)
 2. Reading "Deep Facial Expression Recognition: A Survey" (pp. 1-6)
-3. Organizing notes from that paper([[Deep Facial Expression Recognition-A survey]])
+3. Organizing notes from that paper([[deep-facial-expression-recognition-a-survey]])
 
 I didn't study as much as I wanted to.
 I'm still feeling lost.

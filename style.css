@@ -243,6 +243,59 @@ a:hover {
     margin: 1rem 0;
 }
 
+/* ===== Wikilinks ===== */
+.wikilink {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.15s;
+}
+
+.wikilink:hover {
+    text-decoration-color: var(--color-accent);
+}
+
+.wikilink-broken {
+    color: var(--color-text-secondary);
+    text-decoration: underline wavy;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+    cursor: help;
+}
+
+/* ===== Backlinks ===== */
+.backlinks {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.backlinks h2 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.backlinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.backlinks li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.backlinks li::before {
+    content: "\2190";
+    margin-right: 0.4rem;
+    color: var(--color-border);
+}
+
 /* ===== About Page ===== */
 .about-content h1 {
     font-size: 1.4rem;
