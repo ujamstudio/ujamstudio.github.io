@@ -1,13 +1,13 @@
 ---
 category: Daily Journal
-summary: The parent selector we always wanted is finally here.
+summary: "[2026-02-15]Daily-Journal"
 ---
 
 Here's what I studied today:
 
 1. Solving 18.01 Problem Set 1 (Section 1)
 2. Reading "Deep Facial Expression Recognition: A Survey" (pp. 1-6)
-3. Organizing notes from that paper
+3. Organizing notes from that paper([[Deep Facial Expression Recognition-A survey]])
 
 I didn't study as much as I wanted to.
 I'm still feeling lost.
