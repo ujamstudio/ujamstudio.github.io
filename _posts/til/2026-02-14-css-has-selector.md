@@ -1,14 +1,12 @@
 ---
 title: "TIL: CSS :has() Selector"
 category: TIL
-summary: The parent selector we always wanted is finally here. Quick note on how it works.
+summary: The parent selector we always wanted is finally here.
 ---
 
 ## What is `:has()`?
 
-The `:has()` pseudo-class lets you style a parent element based on its children. CSS finally has a "parent selector."
-
-## Example
+The `:has()` pseudo-class lets you style a parent element based on its children.
 
 ```css
 /* Style a card only if it contains an image */
