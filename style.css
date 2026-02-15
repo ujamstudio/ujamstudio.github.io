@@ -245,21 +245,22 @@ a:hover {
 
 /* ===== Wikilinks ===== */
 .wikilink {
-    color: var(--color-accent);
+    color: #2563eb;
     text-decoration: underline;
-    text-decoration-color: var(--color-border);
+    text-decoration-color: #93c5fd;
     text-underline-offset: 2px;
-    transition: text-decoration-color 0.15s;
+    transition: all 0.15s;
 }
 
 .wikilink:hover {
-    text-decoration-color: var(--color-accent);
+    color: #1d4ed8;
+    text-decoration-color: #2563eb;
 }
 
 .wikilink-broken {
-    color: var(--color-text-secondary);
+    color: #b91c1c;
     text-decoration: underline wavy;
-    text-decoration-color: #ccc;
+    text-decoration-color: #fca5a5;
     text-underline-offset: 2px;
     cursor: help;
 }
