@@ -1,21 +1,19 @@
 ---
-title: Set Up My Blog with GitHub Pages
+title: The first post of my big picture
 category: Daily Journal
 summary: Finally started my dev blog. Built with Jekyll and GitHub Pages.
 ---
+Hi guys, it's Jay (Minjae Kim).
+I'm a freshman at Chung-Ang University, majoring in Art and Technology.  
 
-## What I Did Today
+Today, I'm starting this blog.  
+My ultimate dream is to become an AI engineer who develops immersive technology.  
 
-- Created a Jekyll blog structure from scratch
-- Set up category-based folder organization
-- Wrote the first couple of sample posts
-- Pushed everything to GitHub Pages
+Since early 2025, I've been studying mathematics, computer science, and natural science using open lectures like MIT OCW. Originally, I saved my markdown notes in Obsidian—lecture notes, homework, and organized knowledge. Now, I want to share this learning journey through my blog.  
 
-## Thoughts
+I will log everything I learn, think, and research here.  
+This is a database for one person—me—and it represents my everything.  
 
-Keeping things simple is the way to go. Plain Markdown, minimal CSS, no heavy frameworks. The goal is to write consistently, not to over-engineer.
+I hope someday you won't be able to find this first post, buried under all the content I'll create.
 
-## Tomorrow
-
-- Write my first real lecture note
-- Look into adding a search feature later
+Wish me luck!

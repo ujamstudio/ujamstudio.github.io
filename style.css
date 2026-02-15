@@ -256,6 +256,80 @@ a:hover {
     color: var(--color-text-secondary);
 }
 
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.breadcrumb a {
+    color: var(--color-text-secondary);
+}
+
+.breadcrumb a:hover {
+    color: var(--color-text);
+}
+
+.breadcrumb-sep {
+    margin: 0 0.35rem;
+    color: var(--color-border);
+}
+
+/* ===== Knowledge Library ===== */
+.knowledge-tree {
+    margin-top: 1rem;
+}
+
+.knowledge-section {
+    margin-bottom: 2rem;
+}
+
+.knowledge-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1rem;
+}
+
+.knowledge-group {
+    margin-bottom: 1.25rem;
+    padding-left: 0.25rem;
+}
+
+.knowledge-subheading {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.knowledge-list {
+    list-style: none;
+    padding-left: 0.75rem;
+}
+
+.knowledge-list li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.knowledge-list li::before {
+    content: "—";
+    color: var(--color-border);
+    margin-right: 0.5rem;
+}
+
+.knowledge-list li a {
+    color: var(--color-text);
+}
+
+.knowledge-list li a:hover {
+    color: var(--color-accent-hover);
+}
+
 /* ===== Footer ===== */
 .site-footer {
     margin-top: 4rem;

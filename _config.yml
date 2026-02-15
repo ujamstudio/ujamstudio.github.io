@@ -9,6 +9,10 @@ highlighter: rouge
 permalink: /posts/:title/
 future: true
 
+collections:
+  knowledge:
+    output: true
+    permalink: /knowledge/:path/
 
 defaults:
   - scope:
@@ -16,3 +20,8 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      path: ""
+      type: "knowledge"
+    values:
+      layout: knowledge

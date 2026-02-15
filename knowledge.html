@@ -1,0 +1,57 @@
+---
+layout: default
+title: Knowledge Library
+permalink: /knowledge/
+---
+<div class="about-content">
+    <h1>Knowledge Library</h1>
+</div>
+
+<div class="knowledge-tree">
+    {% assign docs = site.knowledge | sort: "order" %}
+    {% assign subjects = docs | map: "subject" | uniq %}
+
+    {% comment %} Group by top-level subject {% endcomment %}
+    {% assign top_levels = "" %}
+    {% for subject in subjects %}
+        {% assign top = subject | split: " / " | first %}
+        {% unless top_levels contains top %}
+            {% if top_levels != "" %}{% assign top_levels = top_levels | append: "|" %}{% endif %}
+            {% assign top_levels = top_levels | append: top %}
+        {% endunless %}
+    {% endfor %}
+
+    {% assign tops = top_levels | split: "|" %}
+    {% for top in tops %}
+    <div class="knowledge-section">
+        <h2 class="knowledge-heading">{{ top }}</h2>
+        {% for subject in subjects %}
+            {% assign s_top = subject | split: " / " | first %}
+            {% if s_top == top %}
+            <div class="knowledge-group">
+                <h3 class="knowledge-subheading">
+                    {% assign path_parts = subject | split: " / " %}
+                    {% assign display = "" %}
+                    {% for part in path_parts %}
+                        {% if forloop.first == false %}
+                            {% if display != "" %}{% assign display = display | append: " / " %}{% endif %}
+                            {% assign display = display | append: part %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if display != "" %}{{ display }}{% endif %}
+                </h3>
+                <ul class="knowledge-list">
+                    {% for doc in docs %}
+                        {% if doc.subject == subject %}
+                        <li>
+                            <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
