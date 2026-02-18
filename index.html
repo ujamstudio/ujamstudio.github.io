@@ -23,11 +23,13 @@ title: ""
         {% assign cat = item.category %}
     {% endif %}
     <li class="post-item" data-category="{{ cat }}">
-        <span class="post-date">
-            {% if item.date %}{{ item.date | date: "%Y-%m-%d" }}{% endif %}
-        </span>
         <h2 class="post-title">
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% if item.date %}
+                {% assign display_title = item.date | date: "%Y %m %d" | append: " " | append: item.title %}
+            {% else %}
+                {% assign display_title = item.title %}
+            {% endif %}
+            <a href="{{ item.url | relative_url }}">{{ display_title }}</a>
         </h2>
         {% if item.summary %}
         <p class="post-summary">{{ item.summary }}</p>
